@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        p, main, aside {
+            border: 1px solid red;
+        }
+
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid blue;
+            flex-wrap: wrap;
+        }
+
+        header {
+            flex-basis: 100%;
+        }
+
+
+        main {
+            box-sizing: border-box;
+            width: 60%;     
+            
+        }
+
+        .flexp {
+            width: 45%;
+
+        }
+
+        .flexp3 {
+            width: 95%;
+        }
+
+        aside {
+            box-sizing: border-box;
+            width: 40%;
+            
+        }
+
+        section {
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+    <header>
+        <p>Шапка страницы</p>
+    </header>
+    <main>
+        <h1>Основная часть</h1>
+        <section>
+            <p class="flexp">Ещё 1</p>
+        </section>
+        <section>
+            <p class="flexp">Ещё 2</p>
+        </section>
+        <section>
+            <p class="flexp3">Ещё 3</p>
+        </section>
+    </main>
+    <aside>
+        <p>Боковая область</p>
+    </aside>
+    <footer>
+        <p>Секция футера 1</p>
+        <p>Секция футера 2</p>
+        <p>Секция футера 3</p>
+        <p>Секция футера 4</p>
+    </footer>
+    </div>
+
+</body>
+</html>
