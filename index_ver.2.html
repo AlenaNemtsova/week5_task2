@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        header, main, aside, footer {
+            border: 1px solid red;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100px;
+            padding: 10px;    
+        }
+
+        main {
+            box-sizing: border-box;
+            width: 60vw;
+            height: 400px;
+            padding: 10px;        
+        }
+
+        aside {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+            width: 40vw;
+            height: 400px;
+            padding: 10px;            
+        }
+
+        footer {
+            box-sizing: border-box;
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container2 {
+            border: 1px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flexp {  
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            height: 40px;
+        }
+
+        .flexp3 {
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 40px;
+        }
+
+        .flexcontainer {
+            border: 1px solid blue;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        .footersec {
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 60px;
+        }
+
+    </style>
+</head>
+<body> 
+    <header>
+        <p>Шапка страницы</p>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Основная часть</h1>
+            <div class="container2">
+                <p class="flexp">Ещё 1</p>
+                <p class="flexp">Ещё 2</p>
+                <p class="flexp3">Ещё 3</p>
+            </div>
+        </main>
+        
+        <aside>
+            <p>Боковая область</p>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="flexcontainer">
+        <p class="footersec">Секция футера 1</p>
+        <p class="footersec">Секция футера 2</p>
+        <p class="footersec">Секция футера 3</p>
+        <p class="footersec">Секция футера 4</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
